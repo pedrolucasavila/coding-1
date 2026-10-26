@@ -1,35 +1,19 @@
-/*
- Conversor de Moedas:
- ● Crieumconversor de moedas, considerando taxas de câmbio atualizadas.
- ● Asvariáveis devem guardar o valor das moedas inicial e final.
- ● Exiba oresultado com uma mensagem personalizada
- */
+// Exercícios de lógica de programação com valores de exemplo.
 
-let taxadedolar = 5.47
-let valor = 20000
-let valoremdolar = valor / taxadedolar
-console.log (`o dineiro convertido em dolar é: ${valoremdolar}`)  
+// Conversor de reais para dólares.
+// Taxa fixa usada apenas para estudo; não consulta cotações em tempo real.
+const taxaDolar = 5.47;
+const valorEmReais = 20000;
+const valorEmDolares = valorEmReais / taxaDolar;
+console.log(`R$ ${valorEmReais.toFixed(2)} equivalem a US$ ${valorEmDolares.toFixed(2)} na taxa de exemplo.`);
 
-valor = 30000;
+// Conversão de Celsius para Fahrenheit.
+const temperaturaCelsius = 40;
+const temperaturaFahrenheit = (temperaturaCelsius * 9 / 5) + 32;
+console.log(`${temperaturaCelsius} °C equivalem a ${temperaturaFahrenheit.toFixed(1)} °F.`);
 
-/*  Convertendo Celsius para Fahrenheit
- ● Crieumavariável para a temperatura em Celsius e faça a conversão para
- Fahrenheit usando a fórmula (Celsius * 9/5) + 32.
- ● Exiba oresultado com uma mensagem personalizada.
- */
-
-let temperaturaCelsius = 40
-let temperaturaFahrenheit = (temperaturaCelsius * 9/5) + 32
-console.log (`O valor da temperatura em fahrn é: ${temperaturaFahrenheit}`);
-
-/*Calculadora de IMC (Índice de Massa Corporal)
- ● Crievariáveis para peso (em kg) e altura (em metros).
- ● Calcule o IMC utilizando a fórmula: IMC = peso / (altura * altura).
- ● Exiba oresultado no console.
- ● Pesquise sobre o método toFixed- Clique aqui
- */
-
-let pesocorporal = 74kilos
-let altura = 1.74metros
-let Imc = pesocorporal / (altura * altura)
-console.log (`O valor do resultado é : ${Imc}`)
+// Cálculo de IMC: as unidades ficam nos comentários e na mensagem.
+const pesoCorporal = 74; // quilogramas
+const altura = 1.74; // metros
+const imc = pesoCorporal / (altura * altura);
+console.log(`IMC calculado para os valores de exemplo: ${imc.toFixed(2)}.`);
